@@ -27,10 +27,12 @@ public class LoginTest {
 	public void assertTest() {
 		String actualUrl="https://www.facebook.com/";
 		String expectedUrl=driver.getCurrentUrl();
+		System.out.println("Facebook expected Url is" +expectedUrl);
 		Assert.assertEquals(actualUrl, expectedUrl);
 		
 		String actualTitle="Facebook - log in or sign up";
 		String expectedTitle=driver.getTitle();
+		System.out.println("Facebook expected Title is" +expectedTitle);
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 	@Test
